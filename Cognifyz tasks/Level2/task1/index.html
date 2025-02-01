@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card with Bulma</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+
+  <style>
+    
+    .card-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      border: 25px;
+    }
+    .card {
+      margin: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 20px;
+    }
+
+    
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.838);
+    }
+
+    body{
+        background-color: rgba(208, 226, 43, 0.952);
+    }
+  </style>
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-multiline is-centered">
+        <!-- Card 1 -->
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToN6wLmJ9405F4-Q95HGKYqOhA-h0LDObm1A&s" alt="Card image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Plants</p>
+                  <p class="subtitle is-6">About Nature</p>
+                </div>
+              </div>
+
+              <div class="content">
+                Plants are among the most fundamental organisms on Earth, providing the foundation for life on this planet. They come in a vast range of forms, from tiny mosses to towering redwoods, and they play critical roles in both the environment and human life.
+                <br>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://thumbs.dreamstime.com/b/nature-landscape-background-postcard-digital-photography-banner-website-flyer-ads-gift-card-template-wall-art-decorations-298107070.jpg" alt="Card image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Deserts</p>
+                  <p class="subtitle is-6">About Nature</p>
+                </div>
+              </div>
+
+              <div class="content">
+                Deserts are some of the most unique and extreme ecosystems on Earth. Known for their dry conditions, extreme temperatures, and limited rainfall, deserts have adapted in remarkable ways to support life. Despite the challenging environment, deserts are teeming with life and offer a range of valuable natural resources.
+                <br>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

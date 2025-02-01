@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Internship - Cognifyz Technologies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fcfc0dea;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, #6a11cb, #2575fc, #ff7e5f, #feb47b);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header {
+            background: rgba(1, 21, 28, 0.6); 
+            color: rgba(248, 250, 242, 0.917);
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(7, 55, 126, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #0d58d9; 
+            margin-top: 0;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .intro, .highlights, .qualifications {
+            margin-bottom: 30px;
+        }
+
+        .intro p, .highlights ul, .qualifications ul {
+            font-size: 1.1rem;
+            color: #330606;
+        }
+
+        .highlights ul, .qualifications ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .highlights ul li, .qualifications ul li {
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .highlights ul li:hover, .qualifications ul li:hover {
+            color: #2575fc; 
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #2575fc; 
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #6a11cb; 
+            text-decoration: underline;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #2575fc; 
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Developer Internship Opportunities</h1>
+        <p>at Cognifyz Technologies</p>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>About the Internship</h2>
+            <p>
+                Join Cognifyz Technologies for an exciting Web Developer Internship program! 
+                This internship offers a unique opportunity to gain hands-on experience in web development, 
+                working on real-world projects under the guidance of experienced mentors. 
+                The program runs for your selection of <strong>1 or 2 months</strong>, with flexible start dates.
+            </p>
+        </section>
+
+        <section class="highlights">
+            <h2>Benefits of the Internship</h2>
+            <ul>
+                <li><b>Real-World Experience And Mentorship</b></li>
+                <li>Work on cutting-edge technologies and tools.</li>
+                <li>Receive mentorship from industry experts.</li>
+                <li>Enhance your portfolio with live projects.</li>
+                <li>Opportunity for a full-time role based on performance.</li>
+            </ul>
+        </section>
+
+        <section class="qualifications">
+            <h2>Desired Skills And Technologies</h2>
+            <ul>
+                <li>Proficiency in HTML, CSS, and JavaScript.</li>
+                <li>Familiarity with front-end frameworks like React or Angular.</li>
+                <li>Basic understanding of back-end technologies (Node.js, Python, etc.).</li>
+                <li>Knowledge of version control systems (e.g., Git).</li>
+                <li>Strong problem-solving and communication skills.</li>
+            </ul>
+        </section>
+
+        <section class="cta">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScd5TRLHUVC8kle_6k4JceWTcfknRoNsuRB6Q4ymhGrAIsnSA/viewform" class="cta-button" target="_blank">Apply Now</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>Contact us for inquiries:</p>
+        <div class="social-links">
+            <a href="mailto:contact@cognifyz.com" title="Email">
+                <i class="fas fa-envelope"></i> contact@cognifyz.com
+            </a>
+            <a href="https://www.instagram.com/cognifyz_tech" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i> @cognifyz_tech
+            </a>
+            <a href="https://www.linkedin.com/company/cognifyz-technologies" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i> @cognifyz-Technologies
+            </a>
+        </div>
+        <p>&copy; 2025 Cognifyz Technologies. All rights reserved.</p>
+    </footer>
+</body>
+</html>

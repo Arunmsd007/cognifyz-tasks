@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+        }
+
+        .slideshow {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            overflow: hidden;
+            border: 5px solid #e0ef11fb;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        .slideshow img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: slide 16s infinite;
+        }
+
+        .slideshow img:nth-child(1) {
+            animation-delay: 2s;
+        }
+
+        .slideshow img:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        .slideshow img:nth-child(3) {
+            animation-delay: 8s;
+        }
+
+        .slideshow img:nth-child(4) {
+            animation-delay: 12s;
+        }
+
+        .slideshow img:nth-child(5){
+            animation-delay: 16s;
+        }
+
+        .slideshow img:nth-child(6){
+            animation-delay: 20s;
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            20% {
+                opacity: 1;
+            }
+            30% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow">
+        <img src="https://images.unsplash.com/photo-1500463959177-e0869687df26?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2lsZCUyMGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D" alt="Image 1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDYuZl-5fvdRirCOQNmp81ai4pzSsOVR96yQ&s" alt="Image 2">
+        <img src="https://images.unsplash.com/photo-1575550959106-5a7defe28b56?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2lsZGxpZmV8ZW58MHx8MHx8fDA%3D" alt="Image 3">
+        <img src="https://plus.unsplash.com/premium_photo-1665952050581-4bf02bb5752e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aGFwcHklMjBhbmltYWx8ZW58MHx8MHx8fDA%3D" alt="Image 4">
+        <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdpbGQlMjBhbmltYWxzfGVufDB8fDB8fHww" alt="Image 2">
+        <img src="https://plus.unsplash.com/premium_photo-1675715924047-a9cf6c539d9b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YW5pbWFsfGVufDB8fDB8fHww" alt="Image 2">
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a19d9d;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .box {
+            background: rgb(10, 203, 224);
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            min-width: 250px;
+            box-shadow: 0px 4px 8px rgba(12, 12, 11, 0.91);
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #222;
+            color: rgb(255, 246, 246);
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        
+        @media screen and (max-width: 1024px) {
+            .box {
+                width: 45%; 
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            .box {
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Content Webpage</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="box">What are Web Services? <br> <br>
+            Web services are standardized ways for applications to communicate over the internet or a network. They enable interoperability between different software applications, regardless of their platform, programming language, or location</div>
+        <div class="box">What is a Media Query? <br> <br>
+            A media query is a CSS technique used to apply styles dynamically based on the device's screen size, resolution, or other properties. It is an essential tool for creating responsive web designs that adapt to different screen sizes like desktops, tablets, and mobile devices</div>
+        <div class="box">What is Responsive Web Design? <br> <br>
+            Responsive Web Design (RWD) is an approach to web development that ensures a website adapts and looks good on all screen sizes and devices, including desktops, tablets, and mobile phones.
+                      It eliminates the need for multiple versions of a website and improves user experience (UX) by making the design fluid and flexible</div>
+    </div>
+
+    <footer>
+        <p>@2025 Responsive Design Webpage</p>
+    </footer>
+
+</body>
+</html>

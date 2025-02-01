@@ -1,0 +1,44 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: blueviolet;
+    color: brown;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background-color:azure;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.5rem;
+    color: #dc1616;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 1.5rem;
+    color:rgb(238, 136, 12);
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    border: solid;
+    border-radius: 10px;
+    border-color: rgb(236, 21, 179);
+}
